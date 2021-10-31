@@ -15,6 +15,8 @@ const tp = new TransactionPool();
 const p2pServer = new P2pServer(bc, tp);
 const miner = new Miner(bc, tp, wallet, p2pServer);
 
+//The Handlers for each enspoint
+
 app.use(bodyParser.json());
 
 app.get('/blocks', (req, res)=>{
